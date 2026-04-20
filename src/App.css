@@ -1,0 +1,38 @@
+html,body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'BigShoulders_36pt';
+  src: url('../src/fonts/BigShoulders_36pt-Bold.ttf') format('truetype');
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'BigShoulders_36pt';
+}
+@font-face {
+  font-family: 'AlbertSans-Light';
+  src: url('../src/fonts/AlbertSans-Light.ttf') format('truetype');
+}
+button {
+  font-family: 'BigShoulders_36pt'!important;
+}
+p {
+  font-family: 'AlbertSans-Light';
+}
+@font-face {
+  font-family: 'BigShoulders_36pt_bold';
+  src: url('../src/fonts/BigShoulders_60pt-ExtraBold.ttf') format('truetype');
+}
+.head{
+  font-family:'BigShoulders_36pt_bold' !important ;
+} 
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
