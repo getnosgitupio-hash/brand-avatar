@@ -36,7 +36,7 @@ function ProofCard({ slide }) {
   );
 }
 
-export default function Proof() {
+export default function Proof({ openPopup }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -115,9 +115,7 @@ export default function Proof() {
           <div className="relative z-10 flex justify-center">
             <button
               type="button"
-              onClick={() => {
-                window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-              }}
+              onClick={openPopup}
               className="mx-auto flex h-[80px] w-[360px] items-center justify-center bg-center bg-no-repeat px-4 text-center text-xl font-bold leading-tight text-white shadow-lg transition-all duration-300 hover:scale-105 sm:h-[80px] sm:w-[300px] sm:text-[16px] md:h-[92px] md:w-[550px] md:px-6 md:text-4xl"
               style={{
                 backgroundImage: `url(${buttonBg})`,

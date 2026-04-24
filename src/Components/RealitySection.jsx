@@ -7,7 +7,7 @@ import emojiIcon from "../assets/smile.png";
 import pinkButtonBg from "../assets/button-bg.png";
 import yellowBoxBg from "../assets/yellow-button-bg.png";
 
-const RealitySection = () => {
+const RealitySection = ({ openPopup }) => {
   return (
     <section className="bg-black text-white pt-20 md:pt-20 px-4 relative overflow-hidden">
 
@@ -120,9 +120,7 @@ const RealitySection = () => {
           {/* BUTTON */}
           <button
             type="button"
-            onClick={() => {
-              window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-            }}
+            onClick={openPopup}
             className="
               relative z-10
               text-white text-xl sm:text-lg md:text-4xl
