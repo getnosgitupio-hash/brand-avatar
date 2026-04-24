@@ -4,7 +4,7 @@ import layerImage from "../assets/Layer_1.svg";
 import isolationImage from "../assets/Isolation_Mode.png";
 import buttonBg from "../assets/button-bg.png";
 
-export default function Events() {
+export default function Events({ openPopup }) {
   return (
     <>
       {/* ================= FIRST SECTION ================= */}
@@ -104,9 +104,7 @@ export default function Events() {
           {/* BUTTON */}
           <button
             type="button"
-            onClick={() => {
-              window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-            }}
+             onClick={openPopup}
             className="
               relative z-10
               text-white text-xl md:text-4xl

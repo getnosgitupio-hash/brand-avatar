@@ -109,7 +109,7 @@ function StepRow({ step }) {
   );
 }
 
-export default function Working() {
+export default function Working({ openPopup }) {
   return (
     <section className="bg-black px-0 py-8 md:py-16">
       <div className="mx-auto max-w-full">
@@ -140,9 +140,7 @@ export default function Working() {
           <div className="relative z-10 flex justify-center">
             <button
               type="button"
-              onClick={() => {
-                window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-              }}
+              onClick={openPopup}
               className="flex h-[84px] w-[320px] items-center justify-center bg-center bg-no-repeat px-6 py-6 text-center font-display text-xl uppercase leading-none tracking-[0.01em] text-white md:h-[92px] md:w-[550px] md:text-[18px]"
               style={{
                 backgroundImage: `url(${buttonBg})`,

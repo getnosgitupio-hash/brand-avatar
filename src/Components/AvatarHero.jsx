@@ -6,7 +6,7 @@ import buttonBg from "../assets/button-bg.png";
 import circleIcon from "../assets/circle-icon.png";
 import circleIcon2 from "../assets/circle-icon-2.png";
 
-const AvatarHero = () => {
+const AvatarHero = ({ openPopup }) => {
   return (
     <section className="w-full bg-[#FFE600] overflow-hidden relative">
       
@@ -39,9 +39,7 @@ const AvatarHero = () => {
           {/* CTA */}
     <button
   type="button"
-  onClick={() => {
-    window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-  }}
+  onClick={openPopup}
   className="relative z-20 mt-5 md:mt-6 mb-9 mx-auto block text-center text-white text-xl sm:text-lg md:text-3xl px-5 sm:px-6 md:px-8 py-4 sm:py-4 md:py-6 font-bold shadow-lg transition-all duration-300 bg-cover bg-center hover:scale-105"
   style={{
     backgroundImage: `url(${buttonBg})`,

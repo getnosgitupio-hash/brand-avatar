@@ -3,7 +3,7 @@ import grayStrip from "../assets/gray-bg.png";
 import blueStrip from "../assets/navyblue-bg.png";
 import pinkButtonBg from "../assets/button-bg.png";
 
-const StaticLead = () => {
+const StaticLead = ({ openPopup }) => {
   const textRotation = "-4deg";
 
   return (
@@ -47,9 +47,7 @@ const StaticLead = () => {
 
         <button
           type="button"
-          onClick={() => {
-            window.open("https://tidycal.com/brandavatar/discovery-call", "_blank", "noopener,noreferrer");
-          }}
+           onClick={openPopup}
           className="
             relative z-10
             text-xl text-white sm:text-base md:text-4xl
